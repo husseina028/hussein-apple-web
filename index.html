@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="حسين آبل -  بيع وصيانة الهواتف الذكية في العراق. أفضل الأسعار وخدمات الصيانة الاحترافية.">
+  <title>حسين آبل | Hussein Apple - بيع وصيانة الهواتف</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="rtl">
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="assets/logo.jpg" alt="Hussein Apple Logo">
+      <span>Hussein Apple</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero" data-i18n="nav_home">الرئيسية</a></li>
+      <li><a href="#services" data-i18n="nav_services">خدماتنا</a></li>
+      <li><a href="#brands" data-i18n="nav_brands">العلامات التجارية</a></li>
+      <li><a href="#why" data-i18n="nav_why">لماذا نحن</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+      <li><button class="lang-btn" onclick="toggleLang()" data-i18n="lang_switch">English</button></li>
+    </ul>
+    <button class="menu-toggle" onclick="openMenu()" aria-label="Menu">☰</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" onclick="closeMenu()">✕</button>
+    <a href="#hero" data-i18n="nav_home">الرئيسية</a>
+    <a href="#services" data-i18n="nav_services">خدماتنا</a>
+    <a href="#brands" data-i18n="nav_brands">العلامات التجارية</a>
+    <a href="#why" data-i18n="nav_why">لماذا نحن</a>
+    <a href="#contact" data-i18n="nav_contact">تواصل معنا</a>
+    <button class="lang-btn" onclick="toggleLang()" data-i18n="lang_switch">English</button>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <video class="hero-video-bg" src="assets/promo.mp4" autoplay muted loop playsinline></video>
+    <div class="hero-overlay"></div>
+    <div class="hero-bg-glow g1"></div>
+    <div class="hero-bg-glow g2"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title" id="hero-title">
+          <span class="highlight">حسين آبل</span> لبيع وصيانة الهواتف
+        </h1>
+        <p class="hero-desc" data-i18n="hero_desc">
+          نقدم لكم أحدث الهواتف الذكية وخدمات الصيانة الاحترافية مع ضمان الجودة وأفضل الأسعار في السوق.
+        </p>
+        <p class="hero-tagline" data-i18n="hero_tagline">❝ نمزج الصدق بالجودة… حتى نكون خيارك الأول. ❞</p>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num" data-i18n="stat_1_num">+5000</div>
+            <div class="stat-label" data-i18n="stat_1_label">عميل سعيد</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-i18n="stat_2_num">+3000</div>
+            <div class="stat-label" data-i18n="stat_2_label">جهاز تم إصلاحه</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-i18n="stat_3_num">4.9★</div>
+            <div class="stat-label" data-i18n="stat_3_label">تقييم العملاء</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="services_tag">خدماتنا</span>
+      <h2 class="section-title" data-i18n="services_title">كل ما تحتاجه في مكان واحد</h2>
+      <p class="section-desc" data-i18n="services_desc">من بيع أحدث الأجهزة إلى خدمات الصيانة المتخصصة، نوفر لك كل شيء.
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <h3 data-i18n="svc1_title">بيع الهواتف الذكية</h3>
+        <p data-i18n="svc1_desc">أحدث هواتف آيفون وسامسونج وهواوي بأسعار تنافسية مع ضمان رسمي.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔧</div>
+        <h3 data-i18n="svc2_title">صيانة احترافية</h3>
+        <p data-i18n="svc2_desc">إصلاح الشاشات، البطاريات، المنافذ، واللوحات الأم بأيدي خبراء متخصصين.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎧</div>
+        <h3 data-i18n="svc3_title">إكسسوارات أصلية</h3>
+        <p data-i18n="svc3_desc">كفرات، شواحن، سماعات وجميع الإكسسوارات الأصلية لحماية جهازك.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💾</div>
+        <h3 data-i18n="svc4_title">نقل البيانات</h3>
+        <p data-i18n="svc4_desc">نقل جميع بياناتك وصورك وتطبيقاتك بأمان من جهازك القديم إلى الجديد.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔍</div>
+        <h3 data-i18n="svc5_title">فحص الأجهزة المستعملة</h3>
+        <p data-i18n="svc5_desc">فحص شامل للأجهزة المستعملة قبل الشراء مع تقرير مفصل عن حالتها.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">⚙️</div>
+        <h3 data-i18n="svc6_title">برمجة وتحديثات</h3>
+        <p data-i18n="svc6_desc">تحديث الأنظمة، إزالة القفل، وحل جميع مشاكل البرمجيات.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands-section" id="brands">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="brands_tag">العلامات التجارية</span>
+      <h2 class="section-title" data-i18n="brands_title">نعمل مع أفضل العلامات</h2>
+      <p class="section-desc" data-i18n="brands_desc">نوفر أجهزة وقطع غيار أصلية من أشهر العلامات التجارية العالمية.</p>
+    </div>
+    <div class="brands-marquee">
+      <div class="brands-track">
+        <div class="brand-item">Apple</div>
+        <div class="brand-item">Samsung</div>
+        <div class="brand-item">Huawei</div>
+        <div class="brand-item">Xiaomi</div>
+        <div class="brand-item">OnePlus</div>
+        <div class="brand-item">Google</div>
+        <div class="brand-item">OPPO</div>
+        <div class="brand-item">Realme</div>
+        <!-- Duplicated for seamless loop -->
+        <div class="brand-item">Apple</div>
+        <div class="brand-item">Samsung</div>
+        <div class="brand-item">Huawei</div>
+        <div class="brand-item">Xiaomi</div>
+        <div class="brand-item">OnePlus</div>
+        <div class="brand-item">Google</div>
+        <div class="brand-item">OPPO</div>
+        <div class="brand-item">Realme</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="why_tag">لماذا حسين آبل؟</span>
+      <h2 class="section-title" data-i18n="why_title">ثقة آلاف العملاء</h2>
+      <p class="section-desc" data-i18n="why_desc">نلتزم بتقديم أفضل الخدمات مع الحفاظ على أعلى معايير الجودة.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-icon">🛡️</span>
+        <h3 data-i18n="why1_title">ضمان حقيقي</h3>
+        <p data-i18n="why1_desc">ضمان على جميع الأجهزة والصيانة.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">💰</span>
+        <h3 data-i18n="why2_title">أسعار منافسة</h3>
+        <p data-i18n="why2_desc">أفضل الأسعار في السوق بدون مساومة.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">🏆</span>
+        <h3 data-i18n="why3_title">خبرة واسعة</h3>
+        <p data-i18n="why3_desc">سنوات من الخبرة في مجال الهواتف.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="contact_tag">تواصل معنا</span>
+      <h2 class="section-title" data-i18n="contact_title">نحن هنا لمساعدتك</h2>
+      <p class="section-desc" data-i18n="contact_desc">تواصل معنا في أي وقت وسنكون سعداء بخدمتك.</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <a href="tel:+96407810510023" class="contact-item clickable">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4 data-i18n="c_phone_title">الهاتف</h4>
+            <span>07810510023</span>
+            <br>
+            <span>07710510022</span>
+          </div>
+        </a>
+        <a href="https://maps.app.goo.gl/Qj4soRBM4AUbpnFD9" target="_blank" class="contact-item clickable">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4 data-i18n="c_location_title">الموقع</h4>
+            <span data-i18n="c_location_val">النجف - شارع الغدير - مجاور قرطاسية الحسام</span>
+          </div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4 data-i18n="c_hours_title">ساعات العمل</h4>
+            <span data-i18n="c_hours_val">السبت - الخميس: 10ص - 10م</span>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/hussapple/" target="_blank" class="contact-item clickable">
+          <div class="contact-icon">📸</div>
+          <div>
+            <h4 data-i18n="c_social_title">تابعنا</h4>
+            <span>@hussapple</span>
+          </div>
+        </a>
+        <!-- Google Maps Embed -->
+        <div style="border-radius:var(--radius-sm);overflow:hidden;border:1px solid var(--border);margin-top:4px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3000!2d44.347168!3d32.021091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDEnMTUuOSJOIDQ0wrAyMCc0OS44IkU!5e0!3m2!1sar!2siq!4v1!5m2!1sar!2siq"
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <div class="contact-socials">
+        <a href="https://wa.me/96407810510023" target="_blank" class="social-card">
+          <span class="social-icon">💬</span>
+          <span class="social-name" data-i18n="c_whatsapp">واتساب</span>
+        </a>
+        <a href="https://t.me/hussapple" target="_blank" class="social-card">
+          <span class="social-icon">✈️</span>
+          <span class="social-name" data-i18n="c_telegram">تيليجرام</span>
+        </a>
+        <a href="https://www.instagram.com/hussapple/" target="_blank" class="social-card">
+          <span class="social-icon">📸</span>
+          <span class="social-name" data-i18n="c_insta">انستغرام</span>
+        </a>
+        <a href="mailto:contact@husseinapple.com" class="social-card">
+          <span class="social-icon">📧</span>
+          <span class="social-name" data-i18n="c_email">البريد الإلكتروني</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SHOWCASE -->
+  <section class="video-showcase" id="video-section">
+    <div class="video-showcase-wrap reveal">
+      <video src="assets/promo.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="assets/logo.jpg" alt="Hussein Apple">
+      <span>Hussein Apple</span>
+    </div>
+    <div class="footer-links">
+      <a href="#hero" data-i18n="nav_home">الرئيسية</a>
+      <a href="#services" data-i18n="nav_services">خدماتنا</a>
+      <a href="#brands" data-i18n="nav_brands">العلامات التجارية</a>
+      <a href="#contact" data-i18n="nav_contact">تواصل معنا</a>
+    </div>
+    <p data-i18n="footer_copy">© 2026 حسين آبل. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
